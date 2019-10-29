@@ -1,0 +1,94 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Microservices_Postman_Requests",
+		"_postman_id": "72059fa0-38bd-a460-0d66-109d1ff20a37",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9092/movieCatalogue/gagan",
+			"request": {
+				"url": "localhost:9092/movieCatalogue/gagan",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "movieCatalogue/userName"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9091/rating?user=gagan",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9091/rating?user=gagan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"rating"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "gagan",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "rating?user=userName"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/movies/info?movieId=M101",
+			"request": {
+				"url": {
+					"raw": "http://localhost:9090/movies/info?movieId=M101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"movies",
+						"info"
+					],
+					"query": [
+						{
+							"key": "movieId",
+							"value": "M101",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "movies/info?movieId=MovieId"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9092/movieCatalogue/getServicesInstanceMap",
+			"request": {
+				"url": "localhost:9092/movieCatalogue/getServicesInstanceMap",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "movieCatalogue/getServicesInstanceMap"
+			},
+			"response": []
+		}
+	]
+}
